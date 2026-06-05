@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>بهاء حمودة — مناسبات وضيافة</title>
+<meta name="description" content="مناسبات وضيافة من بهاء حمودة. طعام • مشروبات • تنسيق. أجعل مناسباتكم لا تُنسى." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg: #0e0c0a;
+    --bg-2: #15110d;
+    --ink: #f3e9d4;
+    --ink-soft: #c9bda3;
+    --ink-mute: #837866;
+    --gold: #c9a35a;
+    --gold-soft: #d9bc7c;
+    --rust: #8a3a1f;
+    --line: rgba(243,233,212,0.12);
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+  html{ scroll-behavior: smooth; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Tajawal', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Grain overlay for warmth */
+  body::before{
+    content:"";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: overlay;
+  }
+
+  .serif{ font-family: 'Amiri', 'Fraunces', serif; }
+  .it{ font-style: italic; }
+
+  .wrap{ max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    padding: 22px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgba(14,12,10,0.85), rgba(14,12,10,0.4));
+    border-bottom: 1px solid var(--line);
+  }
+  .brand{
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-dot{
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 14px var(--gold);
+  }
+  .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .lang-toggle{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-mute);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .lang-toggle:hover{
+    color: var(--gold);
+    border-color: var(--line);
+  }
+  .nav-cta{
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 10px 20px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-cta:hover{
+    color: var(--bg);
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .nav-cta svg{ width:14px; height:14px; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height: 100vh;
+    padding: 160px 0 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .hero::after{
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--line);
+  }
+  .hero-bg{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .glow{
+    position: absolute;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.35;
+  }
+  .glow-1{
+    top: -200px; left: -100px;
+    background: radial-gradient(circle, var(--gold), transparent 60%);
+  }
+  .glow-2{
+    bottom: -200px; right: -150px;
+    background: radial-gradient(circle, var(--rust), transparent 60%);
+    opacity: 0.25;
+  }
+
+  .hero-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .eyebrow{
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.9s 0.2s ease forwards;
+  }
+  .eyebrow .line{ width: 40px; height: 1px; background: var(--gold); }
+
+  h1.hero-title{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(48px, 9vw, 140px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin-bottom: 36px;
+  }
+  h1.hero-title .ln{ display:block; opacity: 0; transform: translateY(40px); animation: fadeUp 1s ease forwards; }
+  h1.hero-title .ln:nth-child(1){ animation-delay: 0.35s; }
+  h1.hero-title .ln:nth-child(2){ animation-delay: 0.55s; }
+  h1.hero-title .ln:nth-child(3){ animation-delay: 0.75s; }
+  h1.hero-title .ampersand{
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .hero-sub{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 48px;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    opacity: 0;
+    animation: fadeUp 1s 0.95s ease forwards;
+  }
+  .hero-sub .dot{ width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+
+  .hero-tag{
+    max-width: 640px;
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(20px, 2.4vw, 30px);
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 56px;
+    opacity: 0;
+    animation: fadeUp 1s 1.15s ease forwards;
+  }
+  .hero-tag::before{
+    content: "—";
+    color: var(--gold);
+    margin-left: 16px;
+  }
+
+  .hero-cta-row{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 1s 1.35s ease forwards;
+  }
+
+  .btn-primary{
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 18px 32px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--ink);
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    z-index: 0;
+  }
+  .btn-primary:hover::before{ transform: translateY(0); }
+  .btn-primary > *{ position: relative; z-index: 1; }
+  .btn-primary svg{ width: 18px; height: 18px; transition: transform 0.35s ease; transform: scaleX(-1); }
+  .btn-primary:hover svg{ transform: scaleX(-1) translateX(4px); }
+
+  .meta-line{
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+  }
+  .meta-line strong{
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Amiri', serif;
+  }
+
+  /* Decorative corner mark */
+  .corner-mark{
+    position: absolute;
+    top: 140px;
+    left: 32px;
+    font-family: 'Amiri', serif;
+    color: var(--ink-mute);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    opacity: 0;
+    animation: fadeUp 1.4s 1.5s ease forwards;
+  }
+
+  /* ---------- SECTION DEFAULTS ---------- */
+  section{ padding: 140px 0; position: relative; }
+  .section-label{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 24px;
+  }
+  .section-label .num{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-mute);
+    letter-spacing: 0;
+  }
+  .section-title{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 5.5vw, 76px);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 64px;
+    max-width: 900px;
+  }
+  .section-title .it{ color: var(--gold-soft); }
+
+  /* ---------- SERVICES ---------- */
+  .services{
+    border-bottom: 1px solid var(--line);
+  }
+  .pillars{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .pillar{
+    padding: 56px 0 56px 40px;
+    border-left: 1px solid var(--line);
+    position: relative;
+    transition: background 0.4s ease;
+  }
+  .pillar:last-child{ border-left: none; padding-left: 0; }
+  .pillar:not(:first-child){ padding-right: 40px; }
+  .pillar:hover{ background: rgba(201,163,90,0.03); }
+
+  .pillar-num{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--ink-mute);
+    margin-bottom: 40px;
+  }
+  .pillar h3{
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .pillar p{
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 1.85;
+    max-width: 340px;
+  }
+  .pillar ul{
+    list-style: none;
+    margin-top: 24px;
+  }
+  .pillar li{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--ink-mute);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pillar li::before{
+    content: "";
+    width: 4px; height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ---------- EXPERIENCE / EDITORIAL ---------- */
+  .experience{
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .exp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .exp-visual{
+    position: relative;
+    aspect-ratio: 3 / 4;
+    background:
+      linear-gradient(135deg, rgba(201,163,90,0.18), rgba(138,58,31,0.25)),
+      radial-gradient(circle at 30% 20%, rgba(217,188,124,0.4), transparent 50%),
+      var(--bg);
+    border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    overflow: hidden;
+  }
+  .exp-visual::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(243,233,212,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(243,233,212,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+  .exp-mark{
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    z-index: 1;
+  }
+  .exp-mono{
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(80px, 12vw, 180px);
+    line-height: 0.85;
+    color: var(--gold);
+    z-index: 1;
+    align-self: flex-start;
+    letter-spacing: -0.04em;
+  }
+  .exp-mono span{ display:block; font-family:'Amiri',serif; font-size: 0.22em; color: var(--ink-soft); margin-top: 12px; letter-spacing: 0.02em; }
+
+  .exp-text h2{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
+  }
+  .exp-text h2 .it{ color: var(--gold-soft); }
+  .exp-text p{
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+  .exp-text p:last-of-type{ margin-bottom: 40px; }
+
+  .signature{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    max-width: 520px;
+  }
+  .sig-avatar{
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--rust));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amiri', serif;
+    color: var(--bg);
+    font-size: 24px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .sig-text{ font-size: 14px; }
+  .sig-text strong{
+    display: block;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink);
+  }
+  .sig-text span{ color: var(--ink-mute); letter-spacing: 0.04em; font-size: 13px; }
+
+  /* ---------- OCCASIONS ---------- */
+  .occasions{
+    border-bottom: 1px solid var(--line);
+  }
+  .occ-marquee{
+    margin-top: 40px;
+    padding: 60px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    position: relative;
+  }
+  .occ-track{
+    display: flex;
+    gap: 80px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+  }
+  .occ-track span{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(40px, 7vw, 100px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    color: var(--ink);
+  }
+  .occ-track span.outline{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--gold);
+  }
+  .occ-track span .dot{
+    color: var(--gold);
+    margin: 0 40px;
+  }
+  @keyframes scroll{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(50%); }
+  }
+
+  .occ-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 60px;
+  }
+  .occ-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    padding-left: 40px;
+    transition: padding 0.4s ease;
+    cursor: default;
+  }
+  .occ-item:nth-child(odd){ padding-right: 0; }
+  .occ-item:nth-child(even){ padding-right: 40px; border-right: 1px solid var(--line); padding-left: 0; }
+  .occ-item:hover{
+    padding-right: 20px;
+  }
+  .occ-item:nth-child(even):hover{ padding-right: 60px; }
+  .occ-name{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+  }
+  .occ-arrow{
+    color: var(--gold);
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+  }
+  .occ-item:hover .occ-arrow{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    padding: 160px 0 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact .glow-c{
+    position: absolute;
+    width: 800px; height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,163,90,0.18), transparent 60%);
+    filter: blur(80px);
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+  }
+  .contact-inner{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .contact .section-label{ justify-content: center; }
+  .contact h2{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: clamp(44px, 7vw, 104px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact h2 .it{ color: var(--gold-soft); }
+  .contact p{
+    color: var(--ink-soft);
+    font-size: 18px;
+    max-width: 560px;
+    margin: 0 auto 56px;
+    line-height: 1.85;
+  }
+
+  .whatsapp-card{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 56px;
+    background: linear-gradient(135deg, rgba(201,163,90,0.06), rgba(138,58,31,0.04));
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .whatsapp-card::before{
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(135deg, var(--gold), var(--rust), var(--gold));
+    border-radius: 24px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+  .whatsapp-card:hover{
+    transform: translateY(-4px);
+    border-color: transparent;
+  }
+  .whatsapp-card:hover::before{ opacity: 1; }
+  .whatsapp-card .wa-label{
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .whatsapp-card .wa-icon{
+    width: 18px; height: 18px;
+    color: var(--gold);
+  }
+  .whatsapp-card .wa-number{
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 4.5vw, 52px);
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    direction: ltr;
+  }
+  .whatsapp-card .wa-name{
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+    color: var(--ink-soft);
+  }
+  .whatsapp-card .wa-cta{
+    margin-top: 24px;
+    padding: 14px 28px;
+    background: var(--gold);
+    color: var(--bg);
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+  }
+  .whatsapp-card:hover .wa-cta{ background: var(--ink); }
+  .whatsapp-card .wa-cta svg{ transform: scaleX(-1); }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--line);
+  }
+  .footer-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer-brand{
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+  }
+  .footer-grid p{
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--ink-mute);
+  }
+  .footer-meta{
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- ANIMATIONS ---------- */
+  @keyframes fadeUp{
+    from{ opacity: 0; transform: translateY(30px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+
+  /* ---------- HERO PHOTO LAYER ---------- */
+  .hero-photo{
+    position: absolute;
+    inset: 0;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.42;
+  }
+  .hero-overlay{
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 30% 30%, transparent 0%, rgba(14,12,10,0.5) 80%),
+      linear-gradient(180deg, transparent 40%, rgba(14,12,10,0.6) 100%);
+  }
+
+  /* ---------- PILLAR IMAGES ---------- */
+  .pillar-image{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 36px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+  }
+  .pillar:hover .pillar-image{ transform: scale(1.02); }
+  .pillar-image::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(14,12,10,0.5) 100%);
+  }
+  .pillar-image-food{
+    background-image:
+      linear-gradient(135deg, rgba(201,163,90,0.25), rgba(138,58,31,0.15)),
+      url('images/food.jpg');
+    background-color: rgba(201,163,90,0.12);
+  }
+  .pillar-image-drinks{
+    background-image:
+      linear-gradient(135deg, rgba(138,58,31,0.3), rgba(201,163,90,0.12)),
+      url('images/drinks.jpg');
+    background-color: rgba(138,58,31,0.18);
+  }
+  .pillar-image-setup{
+    background-image:
+      linear-gradient(135deg, rgba(217,188,124,0.25), rgba(14,12,10,0.3)),
+      url('images/setup.jpg');
+    background-color: rgba(217,188,124,0.14);
+  }
+
+  /* ---------- GALLERY ---------- */
+  .gallery{ border-bottom: 1px solid var(--line); }
+  .gallery-grid{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: 220px 220px 220px;
+    gap: 12px;
+    margin-top: 56px;
+  }
+  .gallery-item{
+    background-color: var(--bg-2);
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  .gallery-item::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(201,163,90,0.18), rgba(138,58,31,0.22));
+  }
+  .gallery-item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(14,12,10,0.4) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .gallery-item:hover{ transform: scale(1.015); filter: brightness(1.08); }
+  .gallery-item:hover::after{ opacity: 1; }
+  .gallery-num{
+    position: absolute;
+    bottom: 18px; right: 22px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    z-index: 2;
+    opacity: 0.7;
+  }
+  .g1{
+    grid-row: 1 / 4;
+    background-image: url('images/gallery-1.jpg');
+  }
+  .g2{ background-image: url('images/gallery-2.jpg'); }
+  .g3{ background-image: url('images/gallery-3.jpg'); }
+  .g4{ background-image: url('images/gallery-4.jpg'); }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px){
+    .wrap{ padding: 0 22px; }
+    nav{ padding: 16px 22px; }
+    .nav-cta{ padding: 8px 14px; font-size: 12px; }
+    .hero{ padding: 130px 0 60px; }
+    section{ padding: 90px 0; }
+    .pillars{ grid-template-columns: 1fr; }
+    .pillar{ border-left: none; border-bottom: 1px solid var(--line); padding: 40px 0; }
+    .pillar:not(:first-child){ padding-right: 0; }
+    .exp-grid{ grid-template-columns: 1fr; gap: 48px; }
+    .occ-list{ grid-template-columns: 1fr; }
+    .occ-item:nth-child(even){ padding-right: 0; border-right: none; }
+    .occ-item:nth-child(even):hover{ padding-right: 20px; }
+    .corner-mark{ display: none; }
+    .whatsapp-card{ padding: 32px 28px; }
+    .nav-cta span.full{ display: none; }
+    .gallery-grid{
+      grid-template-columns: 1fr;
+      grid-template-rows: 280px 200px 200px 200px;
+    }
+    .g1{ grid-row: 1; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <span class="brand-dot"></span>
+    <span>بهاء حمودة</span>
+  </div>
+  <div class="nav-right">
+    <a class="lang-toggle" href="index.html">English</a>
+    <a class="nav-cta" href="https://wa.me/9647717885671" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+      <span class="full">واتساب</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="hero-photo"></div>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="corner-mark">من إعداد بهاء حمودة</div>
+  <div class="wrap hero-grid">
+    <div class="eyebrow">
+      <span class="line"></span>
+      <span>مناسبات وضيافة</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="ln">طعام، مشروبات</span>
+      <span class="ln serif"><span class="ampersand">و</span>ليلة</span>
+      <span class="ln">لا تُنسى.</span>
+    </h1>
+
+    <div class="hero-sub">
+      <span>طعام</span>
+      <span class="dot"></span>
+      <span>مشروبات</span>
+      <span class="dot"></span>
+      <span>تنسيق</span>
+    </div>
+
+    <p class="hero-tag">
+      أجعل مناسباتكم لا تُنسى — كل طبق، وكل كأس، وكل تفصيلة مصمّمة بعناية ودقّة.
+    </p>
+
+    <div class="hero-cta-row">
+      <a class="btn-primary" href="https://wa.me/9647717885671?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A8%D9%87%D8%A7%D8%A1%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7%20%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9." target="_blank" rel="noopener">
+        <span>خطّط لمناسبتك</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <div class="meta-line">
+        بإشراف <strong>بهاء حمودة</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num">٠١ /</span>
+      <span>ما أقدّمه لكم</span>
+    </div>
+    <h2 class="section-title">
+      ثلاثة أركان. <span class="serif">أمسية واحدة متكاملة.</span>
+    </h2>
+
+    <div class="pillars">
+      <!-- Food -->
+      <div class="pillar">
+        <div class="pillar-image pillar-image-food"></div>
+        <div class="pillar-num">i.</div>
+        <h3>الطعام</h3>
+        <p>قوائم مصمّمة حسب ضيوفكم ومكانكم والإحساس الذي تريدون تركه. من العشاء الحميم إلى التجمّعات الكبيرة — يُطهى ويُقدَّم ويُحضَّر بعناية فائقة.</p>
+        <ul>
+          <li>قوائم مخصّصة</li>
+          <li>محطّات طهي مباشر</li>
+          <li>خدمة بوفيه وتقديم فردي</li>
+          <li>مراعاة الاحتياجات الغذائية</li>
+        </ul>
+      </div>
+
+      <!-- Drinks -->
+      <div class="pillar">
+        <div class="pillar-image pillar-image-drinks"></div>
+        <div class="pillar-num">ii.</div>
+        <h3>المشروبات</h3>
+        <p>برنامج مشروبات متكامل — مشروبات مميّزة، عصائر طازجة، خدمة ساخنة، وبار مُنسّق يصبح محور القاعة.</p>
+        <ul>
+          <li>مشروبات مميّزة</li>
+          <li>تجهيز البار وطاقمه</li>
+          <li>خدمة القهوة والشاي</li>
+          <li>عصائر طازجة</li>
+        </ul>
+      </div>
+
+      <!-- Setup -->
+      <div class="pillar">
+        <div class="pillar-image pillar-image-setup"></div>
+        <div class="pillar-num">iii.</div>
+        <h3>التنسيق</h3>
+        <p>القاعة نصف الحكاية. الطاولات والمفارش والإضاءة والزهور والتقديم — مُرتّبة بحيث يبدو كل شيء سلساً عند دخول ضيوفكم.</p>
+        <ul>
+          <li>تصميم الطاولات والجلوس</li>
+          <li>الديكور والزهور</li>
+          <li>الإضاءة والأجواء</li>
+          <li>طاقم خدمة متكامل</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="experience">
+  <div class="wrap">
+    <div class="exp-grid">
+      <div class="exp-visual reveal">
+        <div class="exp-mark">— الأسلوب</div>
+        <div class="exp-mono">
+          ٠١
+          <span>مُصمَّم لا مُرتجل</span>
+        </div>
+      </div>
+
+      <div class="exp-text reveal">
+        <div class="section-label">
+          <span class="num">٠٢ /</span>
+          <span>التجربة</span>
+        </div>
+        <h2>لكلّ مناسبة <span class="serif">إيقاعها.</span> ومهمّتي أن أجده.</h2>
+        <p>
+          أتعامل مع الضيافة كأنّها تأليف. استقبال يتنفّس. طبق أوّل يفتح الحديث. بار يجمع الناس. وخِتام يبقى في الذاكرة بعد رحيل الجميع.
+        </p>
+        <p>
+          من أوّل رسالة إلى آخر طبق يُرفع، ستجدون شخصاً واحداً على الطرف الآخر من الهاتف — يردّ، ويخطّط، ويحضر بنفسه.
+        </p>
+        <div class="signature">
+          <div class="sig-avatar">ب</div>
+          <div class="sig-text">
+            <strong>بهاء حمودة</strong>
+            <span>المؤسّس والمضيف</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num">٠٣ /</span>
+      <span>أعمال مختارة</span>
+    </div>
+    <h2 class="section-title">
+      لمحة من <span class="serif">الأمسيات التي صمّمتها.</span>
+    </h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-item g1"><span class="gallery-num">01</span></div>
+      <div class="gallery-item g2"><span class="gallery-num">02</span></div>
+      <div class="gallery-item g3"><span class="gallery-num">03</span></div>
+      <div class="gallery-item g4"><span class="gallery-num">04</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OCCASIONS ===================== -->
+<section class="occasions">
+  <div class="wrap">
+    <div class="section-label">
+      <span class="num">٠٤ /</span>
+      <span>المناسبات</span>
+    </div>
+    <h2 class="section-title">
+      مصمّمة <span class="serif">لكلّ أنواع التجمّعات.</span>
+    </h2>
+  </div>
+
+  <div class="occ-marquee">
+    <div class="occ-track">
+      <span>أعراس</span><span class="dot">·</span>
+      <span class="outline">خطوبات</span><span class="dot">·</span>
+      <span>أعياد ميلاد</span><span class="dot">·</span>
+      <span class="outline">فعاليات الشركات</span><span class="dot">·</span>
+      <span>عشاء خاص</span><span class="dot">·</span>
+      <span class="outline">ليالي الحنّة</span><span class="dot">·</span>
+      <!-- repeat for seamless loop -->
+      <span>أعراس</span><span class="dot">·</span>
+      <span class="outline">خطوبات</span><span class="dot">·</span>
+      <span>أعياد ميلاد</span><span class="dot">·</span>
+      <span class="outline">فعاليات الشركات</span><span class="dot">·</span>
+      <span>عشاء خاص</span><span class="dot">·</span>
+      <span class="outline">ليالي الحنّة</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="occ-list">
+      <div class="occ-item"><span class="occ-name">الأعراس والخطوبات</span><span class="occ-arrow">←</span></div>
+      <div class="occ-item"><span class="occ-name">فعاليات الشركات</span><span class="occ-arrow">←</span></div>
+      <div class="occ-item"><span class="occ-name">أعياد الميلاد والمناسبات السنوية</span><span class="occ-arrow">←</span></div>
+      <div class="occ-item"><span class="occ-name">عشاء خاص في المنزل</span><span class="occ-arrow">←</span></div>
+      <div class="occ-item"><span class="occ-name">المناسبات الدينية والعائلية</span><span class="occ-arrow">←</span></div>
+      <div class="occ-item"><span class="occ-name">إطلاق المنتجات والعلامات التجارية</span><span class="occ-arrow">←</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="glow-c"></div>
+  <div class="wrap contact-inner">
+    <div class="section-label">
+      <span class="num">٠٥ /</span>
+      <span>تواصلوا معي</span>
+    </div>
+    <h2>لنجعلها <span class="serif">لا تُنسى.</span></h2>
+    <p>أرسلوا رسالة سريعة على واتساب مع التاريخ وبعض التفاصيل — وسأعود إليكم بخطة كاملة.</p>
+
+    <a class="whatsapp-card" href="https://wa.me/9647717885671?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A8%D9%87%D8%A7%D8%A1%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7%20%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A9." target="_blank" rel="noopener">
+      <div class="wa-label">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        واتساب مباشر
+      </div>
+      <div class="wa-number">+964 771 788 5671</div>
+      <div class="wa-name">بهاء حمودة</div>
+      <div class="wa-cta">
+        <span>أرسل رسالة</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">بهاء حمودة <span style="color:var(--gold)">·</span> مناسبات وضيافة</div>
+    <div class="footer-meta">
+      <p>طعام · مشروبات · تنسيق</p>
+      <p>© <span id="year"></span> جميع الحقوق محفوظة</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal-on-scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
