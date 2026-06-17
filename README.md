@@ -1,4 +1,4 @@
-# Bahaa Hammode — Events & Catering
+# Luxe Dallal — Events & Catering
 
 ## Files
 
