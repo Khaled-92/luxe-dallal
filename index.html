@@ -206,7 +206,8 @@
   .hero-sub{
     display: flex;
     align-items: center;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 12px 18px;
     margin-bottom: 48px;
     font-size: 14px;
     letter-spacing: 0.24em;
@@ -440,6 +441,113 @@
     font-size: 15px;
     line-height: 1.7;
   }
+
+  /* ---------- ABOUT ---------- */
+  .about{ border-bottom: 1px solid var(--line); }
+  .services-section{ border-bottom: 1px solid var(--line); }
+  .about-lede{ margin-top: 8px; }
+  .about-lede p{
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    max-width: 760px;
+  }
+  .about-lede p:last-child{ margin-bottom: 0; }
+  .about-lede strong{ color: var(--ink); font-weight: 500; }
+  .about-services-title{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--gold-soft);
+    margin: 56px 0 28px;
+  }
+  .svc-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .svc-card{
+    background: var(--bg);
+    padding: 34px 30px;
+    transition: background 0.35s ease;
+  }
+  .svc-card:hover{ background: rgba(201,163,90,0.04); }
+  .svc-card h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--ink);
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+  .svc-card p{
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  .svc-card ul{ list-style: none; }
+  .svc-card li{
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .svc-card li:last-child{ border-bottom: none; }
+  .svc-card li::before{
+    content: "";
+    width: 4px; height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .mv-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 72px;
+  }
+  .mv{
+    padding: 40px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(243,233,212,0.015);
+  }
+  .mv .mv-label{
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 18px;
+  }
+  .mv p{
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(20px, 2.2vw, 26px);
+    line-height: 1.4;
+    color: var(--ink);
+  }
+  .tagline{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 5vw, 64px);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .tagline .it{ color: var(--gold-soft); }
 
   /* ---------- EXPERIENCE / EDITORIAL ---------- */
   .experience{
@@ -909,6 +1017,12 @@
     .offering{ padding: 28px 24px; }
     .offering .pillar-num{ margin-bottom: 16px; }
     .offering h3{ font-size: 24px; }
+    .about-services-title{ margin-top: 44px; font-size: 22px; }
+    .svc-card{ padding: 26px 22px; }
+    .svc-card h3{ font-size: 21px; }
+    .mv-grid{ grid-template-columns: 1fr; gap: 16px; margin-top: 48px; }
+    .mv{ padding: 28px; }
+    .tagline{ margin-top: 56px; }
     .exp-grid{ grid-template-columns: 1fr; gap: 48px; }
     .occ-list{ grid-template-columns: 1fr; }
     .occ-item:nth-child(even){ padding-left: 0; border-left: none; }
@@ -955,17 +1069,29 @@
     </div>
 
     <h1 class="hero-title">
-      <span class="ln">Food, drinks</span>
-      <span class="ln serif it">&amp; the kind of</span>
-      <span class="ln">night you remember.</span>
+      <span class="ln">Everything your</span>
+      <span class="ln serif it">celebration needs,</span>
+      <span class="ln">in one place.</span>
     </h1>
 
     <div class="hero-sub">
-      <span>Food</span>
+      <span>Event Planning</span>
+      <span class="dot"></span>
+      <span>Catering</span>
       <span class="dot"></span>
       <span>Drinks</span>
       <span class="dot"></span>
-      <span>Setup</span>
+      <span>Decoration</span>
+      <span class="dot"></span>
+      <span>Photography</span>
+      <span class="dot"></span>
+      <span>Bridal</span>
+      <span class="dot"></span>
+      <span>Grooming</span>
+      <span class="dot"></span>
+      <span>Florals</span>
+      <span class="dot"></span>
+      <span>Entertainment</span>
     </div>
 
     <p class="hero-tag">
@@ -985,122 +1111,174 @@
 </section>
 
 <!-- ===================== SERVICES ===================== -->
-<section class="services">
+<section class="services-section">
   <div class="wrap">
     <div class="section-label">
       <span class="num">01 /</span>
-      <span>What I bring to the table</span>
+      <span>Our Services</span>
     </div>
     <h2 class="section-title">
-      Three pillars. <span class="serif it">One seamless evening.</span>
+      The whole occasion, <span class="serif it">handled.</span>
     </h2>
 
-    <div class="pillars">
-      <!-- Food -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-food"></div>
-        <div class="pillar-num">i.</div>
-        <h3>Food</h3>
-        <p>Menus designed around your guests, your venue, and the feeling you want to leave behind. From intimate dinners to large gatherings — cooked, plated, and served with care.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <h3>Event Planning &amp; Coordination</h3>
+        <p>From first idea to final farewell, we map out every moment and manage the moving parts so the day runs without a hitch.</p>
         <ul>
-          <li>Tailored menus</li>
-          <li>Live stations</li>
-          <li>Buffet &amp; plated service</li>
-          <li>Dietary accommodations</li>
+          <li>Full planning &amp; design</li>
+          <li>Partial planning</li>
+          <li>Day-of coordination</li>
+          <li>Vendor sourcing &amp; management</li>
+          <li>Budget &amp; timeline planning</li>
         </ul>
       </div>
-
-      <!-- Drinks -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-drinks"></div>
-        <div class="pillar-num">ii.</div>
-        <h3>Drinks</h3>
-        <p>A complete beverage program — signature cocktails, fresh juices, hot service, and a styled bar that becomes the centerpiece of the room.</p>
+      <div class="svc-card">
+        <h3>Event Venue</h3>
+        <p>Handpicked spaces for every scale and mood — from intimate halls to grand ballrooms — secured and shaped around the evening you imagine.</p>
         <ul>
-          <li>Signature drinks</li>
-          <li>Bar setup &amp; staff</li>
-          <li>Coffee &amp; tea service</li>
+          <li>Intimate halls</li>
+          <li>Grand ballrooms</li>
+          <li>Outdoor &amp; garden venues</li>
+          <li>Location sourcing &amp; booking</li>
+          <li>Logistics &amp; on-site setup</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Catering &amp; Hospitality Services</h3>
+        <p>Menus designed around your guests and your venue — cooked, plated, and served with care, from intimate dinners to large gatherings.</p>
+        <ul>
+          <li>Buffet service</li>
+          <li>Plated / served dinner</li>
+          <li>Live cooking stations</li>
+          <li>Canapés &amp; welcome bites</li>
+          <li>Service staff &amp; waiters</li>
+          <li>Dietary &amp; custom menus</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Drinks &amp; Beverage Stations</h3>
+        <p>A complete beverage program and a styled bar that becomes the centerpiece of the room.</p>
+        <ul>
+          <li>Signature mocktails</li>
           <li>Fresh-pressed juices</li>
+          <li>Coffee &amp; tea bar</li>
+          <li>Welcome drinks</li>
+          <li>Styled bar setup &amp; bartenders</li>
         </ul>
       </div>
-
-      <!-- Setup -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-setup"></div>
-        <div class="pillar-num">iii.</div>
-        <h3>Setup</h3>
-        <p>The room is half the story. Tables, linens, lighting, florals, plating — arranged so everything looks effortless when your guests walk in.</p>
+      <div class="svc-card">
+        <h3>Decoration &amp; Event Styling</h3>
+        <p>Florals, lighting, drapery, and styling that turn any room into a setting — every detail carrying one cohesive look.</p>
         <ul>
-          <li>Table &amp; seating design</li>
-          <li>Décor &amp; florals</li>
+          <li>Theme &amp; concept design</li>
+          <li>Stage &amp; backdrops</li>
           <li>Lighting &amp; ambience</li>
-          <li>Full service staff</li>
+          <li>Table &amp; centerpiece styling</li>
+          <li>Drapery &amp; entrance design</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Photography &amp; Videography</h3>
+        <p>Cinematic coverage that captures the day as it felt, not just how it looked — ready to relive for years.</p>
+        <ul>
+          <li>Photo coverage</li>
+          <li>Cinematic video</li>
+          <li>Drone / aerial</li>
+          <li>Same-day edit</li>
+          <li>Photo booth</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Bridal Services &amp; Fashion Designers</h3>
+        <p>A curated wardrobe and custom design for the bride and her guests, styled to suit the tone of the occasion.</p>
+        <ul>
+          <li>Bridal gowns</li>
+          <li>Evening &amp; guest dresses</li>
+          <li>Custom design</li>
+          <li>Fittings &amp; alterations</li>
+          <li>Accessories &amp; veils</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Beauty Salon &amp; Styling</h3>
+        <p>On-occasion hair, makeup, and styling for the bride, the host, and the guests — polished looks, camera-ready.</p>
+        <ul>
+          <li>Bridal hair &amp; makeup</li>
+          <li>Guest hair &amp; makeup</li>
+          <li>Hairstyling &amp; updos</li>
+          <li>Nails &amp; finishing touches</li>
+          <li>Pre-event styling sessions</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Groom Styling &amp; Grooming Services</h3>
+        <p>Sharp cuts, grooming, and styling for the groom and the gentlemen — a fresh, dialed-in look for the big day.</p>
+        <ul>
+          <li>Suits &amp; thobes</li>
+          <li>Haircut &amp; beard styling</li>
+          <li>Shave &amp; skincare</li>
+          <li>Complete grooming package</li>
+          <li>Accessories</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Floral Arrangements &amp; Special Touches</h3>
+        <p>Bouquets, centerpieces, and the small details that make the day feel personal — from the aisle to the favors.</p>
+        <ul>
+          <li>Bridal bouquets</li>
+          <li>Centerpieces</li>
+          <li>Floral arches &amp; backdrops</li>
+          <li>Aisle &amp; petal styling</li>
+          <li>Favors &amp; gifts</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>Entertainment &amp; Guest Experiences</h3>
+        <p>Music, hosts, and experiences that set the rhythm of the night and keep your guests captivated.</p>
+        <ul>
+          <li>Live music &amp; bands</li>
+          <li>DJ &amp; sound</li>
+          <li>MC / host</li>
+          <li>Performers &amp; shows</li>
+          <li>Interactive guest activities</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== OFFERINGS ===================== -->
-<section class="services-extra">
+<!-- ===================== ABOUT ===================== -->
+<section class="about">
   <div class="wrap">
     <div class="section-label">
       <span class="num">02 /</span>
-      <span>Beyond the table</span>
+      <span>About Luxe Dallal</span>
     </div>
     <h2 class="section-title">
-      The whole occasion, <span class="serif it">handled.</span>
+      Every celebration deserves to be <span class="serif it">effortless, elegant &amp; unforgettable.</span>
     </h2>
 
-    <div class="offerings">
-      <!-- Wedding Guest Dresses -->
-      <div class="offering">
-        <div class="pillar-num">iv.</div>
-        <h3>Wedding Guest Dresses</h3>
-        <p>A curated wardrobe of elegant gowns and evening wear for you and your guests — styled to suit the tone of the occasion, so everyone arrives looking the part without the last-minute scramble.</p>
-      </div>
+    <div class="about-lede">
+      <p>Founded with a vision to bring all event essentials together in one place, <strong>Luxe Dallal</strong> is more than an event service provider — it is a complete platform connecting clients with trusted professionals and premium experiences.</p>
+      <p>From intimate gatherings and private celebrations to engagements and weddings, we carefully curate every detail to create moments that reflect your style, personality, and vision.</p>
+      <p>Through a network of carefully selected partners and professionals, we make planning simple, seamless, and enjoyable.</p>
+      <p>At Luxe Dallal, we don't just organize events — we create experiences, celebrate stories, and turn special moments into lasting memories.</p>
+    </div>
 
-      <!-- Event Venue -->
-      <div class="offering">
-        <div class="pillar-num">v.</div>
-        <h3>Event Venue</h3>
-        <p>Handpicked spaces for every scale and mood, from intimate halls to grand ballrooms. I secure the location, handle the logistics, and shape it around the evening you have in mind.</p>
+    <div class="mv-grid">
+      <div class="mv">
+        <span class="mv-label">Our Mission</span>
+        <p>To simplify event planning by bringing premium services, trusted professionals, and exceptional experiences together in one destination.</p>
       </div>
+      <div class="mv">
+        <span class="mv-label">Our Vision</span>
+        <p>To become the leading destination for luxury events, weddings, and celebrations across Iraq and the region.</p>
+      </div>
+    </div>
 
-      <!-- Decoration -->
-      <div class="offering">
-        <div class="pillar-num">vi.</div>
-        <h3>Decoration</h3>
-        <p>Florals, lighting, drapery, and styling that turn any room into a setting. Every detail chosen to carry one cohesive look — from the entrance to the centerpiece.</p>
-      </div>
-
-      <!-- Entertainment -->
-      <div class="offering">
-        <div class="pillar-num">vii.</div>
-        <h3>Entertainment</h3>
-        <p>Live music, DJs, performers, and hosts who set the rhythm of the night and keep your guests captivated — from the first toast to the last dance.</p>
-      </div>
-
-      <!-- Staff Service -->
-      <div class="offering">
-        <div class="pillar-num">viii.</div>
-        <h3>Staff Service</h3>
-        <p>Trained, attentive teams — hosts, servers, and coordinators — who run the floor smoothly and look after every guest, so the evening feels effortless from arrival to farewell.</p>
-      </div>
-
-      <!-- Beauty Salon -->
-      <div class="offering">
-        <div class="pillar-num">ix.</div>
-        <h3>Beauty Salon</h3>
-        <p>On-occasion hair, makeup, and styling for the bride, the host, and the guests — polished looks prepared with care so everyone steps into the celebration camera-ready.</p>
-      </div>
-
-      <!-- Barber -->
-      <div class="offering">
-        <div class="pillar-num">x.</div>
-        <h3>Barber</h3>
-        <p>Sharp cuts, grooming, and styling for the groom and the gentlemen — a fresh, dialed-in look for the big day, handled with the same attention as everything else.</p>
-      </div>
+    <div class="tagline">
+      One Destination. <span class="serif it">Every Celebration.</span>
     </div>
   </div>
 </section>

@@ -202,7 +202,8 @@
   .hero-sub{
     display: flex;
     align-items: center;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 12px 18px;
     margin-bottom: 48px;
     font-size: 15px;
     letter-spacing: 0.08em;
@@ -419,6 +420,112 @@
     font-size: 15px;
     line-height: 1.8;
   }
+
+  /* ---------- ABOUT ---------- */
+  .about{ border-bottom: 1px solid var(--line); }
+  .services-section{ border-bottom: 1px solid var(--line); }
+  .about-lede{ margin-top: 8px; }
+  .about-lede p{
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+    max-width: 760px;
+  }
+  .about-lede p:last-child{ margin-bottom: 0; }
+  .about-lede strong{ color: var(--ink); font-weight: 500; }
+  .about-services-title{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--gold-soft);
+    margin: 56px 0 28px;
+  }
+  .svc-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .svc-card{
+    background: var(--bg);
+    padding: 34px 30px;
+    transition: background 0.35s ease;
+  }
+  .svc-card:hover{ background: rgba(201,163,90,0.04); }
+  .svc-card h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--ink);
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+  }
+  .svc-card p{
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+  .svc-card ul{ list-style: none; }
+  .svc-card li{
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--ink-mute);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--line);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .svc-card li:last-child{ border-bottom: none; }
+  .svc-card li::before{
+    content: "";
+    width: 4px; height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .mv-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 72px;
+  }
+  .mv{
+    padding: 40px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(243,233,212,0.015);
+  }
+  .mv .mv-label{
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 18px;
+  }
+  .mv p{
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(20px, 2.2vw, 26px);
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .tagline{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 5vw, 64px);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .tagline .it{ color: var(--gold-soft); }
 
   /* ---------- EXPERIENCE / EDITORIAL ---------- */
   .experience{
@@ -881,6 +988,12 @@
     .offering{ padding: 28px 24px; }
     .offering .pillar-num{ margin-bottom: 16px; }
     .offering h3{ font-size: 24px; }
+    .about-services-title{ margin-top: 44px; font-size: 22px; }
+    .svc-card{ padding: 26px 22px; }
+    .svc-card h3{ font-size: 21px; }
+    .mv-grid{ grid-template-columns: 1fr; gap: 16px; margin-top: 48px; }
+    .mv{ padding: 28px; }
+    .tagline{ margin-top: 56px; }
     .exp-grid{ grid-template-columns: 1fr; gap: 48px; }
     .occ-list{ grid-template-columns: 1fr; }
     .occ-item:nth-child(even){ padding-right: 0; border-right: none; }
@@ -927,17 +1040,29 @@
     </div>
 
     <h1 class="hero-title">
-      <span class="ln">طعام، مشروبات</span>
-      <span class="ln serif"><span class="ampersand">و</span>ليلة</span>
-      <span class="ln">لا تُنسى.</span>
+      <span class="ln">كل ما تحتاجه</span>
+      <span class="ln serif it">مناسبتك،</span>
+      <span class="ln">في مكانٍ واحد.</span>
     </h1>
 
     <div class="hero-sub">
-      <span>طعام</span>
+      <span>تخطيط المناسبات</span>
       <span class="dot"></span>
-      <span>مشروبات</span>
+      <span>الضيافة</span>
       <span class="dot"></span>
-      <span>تنسيق</span>
+      <span>المشروبات</span>
+      <span class="dot"></span>
+      <span>الديكور</span>
+      <span class="dot"></span>
+      <span>التصوير</span>
+      <span class="dot"></span>
+      <span>العرائس</span>
+      <span class="dot"></span>
+      <span>العناية</span>
+      <span class="dot"></span>
+      <span>الزهور</span>
+      <span class="dot"></span>
+      <span>الترفيه</span>
     </div>
 
     <p class="hero-tag">
@@ -957,122 +1082,174 @@
 </section>
 
 <!-- ===================== SERVICES ===================== -->
-<section class="services">
+<section class="services-section">
   <div class="wrap">
     <div class="section-label">
       <span class="num">٠١ /</span>
-      <span>ما أقدّمه لكم</span>
+      <span>خدماتنا</span>
     </div>
     <h2 class="section-title">
-      ثلاثة أركان. <span class="serif">أمسية واحدة متكاملة.</span>
+      المناسبة كاملةً، <span class="serif it">بين يديك.</span>
     </h2>
 
-    <div class="pillars">
-      <!-- Food -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-food"></div>
-        <div class="pillar-num">i.</div>
-        <h3>الطعام</h3>
-        <p>قوائم مصمّمة حسب ضيوفكم ومكانكم والإحساس الذي تريدون تركه. من العشاء الحميم إلى التجمّعات الكبيرة — يُطهى ويُقدَّم ويُحضَّر بعناية فائقة.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <h3>تخطيط وتنسيق المناسبات</h3>
+        <p>من الفكرة الأولى حتى الوداع الأخير، نرسم كل لحظة وندير كل التفاصيل لتمرّ المناسبة دون أي عثرة.</p>
         <ul>
-          <li>قوائم مخصّصة</li>
-          <li>محطّات طهي مباشر</li>
-          <li>خدمة بوفيه وتقديم فردي</li>
-          <li>مراعاة الاحتياجات الغذائية</li>
+          <li>التخطيط والتصميم الكامل</li>
+          <li>التخطيط الجزئي</li>
+          <li>تنسيق يوم المناسبة</li>
+          <li>اختيار وإدارة المورّدين</li>
+          <li>إدارة الميزانية والجدول الزمني</li>
         </ul>
       </div>
-
-      <!-- Drinks -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-drinks"></div>
-        <div class="pillar-num">ii.</div>
-        <h3>المشروبات</h3>
-        <p>برنامج مشروبات متكامل — مشروبات مميّزة، عصائر طازجة، خدمة ساخنة، وبار مُنسّق يصبح محور القاعة.</p>
+      <div class="svc-card">
+        <h3>قاعات ومواقع المناسبات</h3>
+        <p>أماكن منتقاة بعناية لكل حجمٍ وأجواء — من القاعات الحميمة إلى الصالات الكبرى — نحجزها ونهيّئها بما يناسب الأمسية التي تتخيّلها.</p>
         <ul>
-          <li>مشروبات مميّزة</li>
-          <li>تجهيز البار وطاقمه</li>
-          <li>خدمة القهوة والشاي</li>
+          <li>قاعات حميمة</li>
+          <li>قاعات احتفالات كبرى</li>
+          <li>مواقع خارجية وحدائق</li>
+          <li>البحث عن الموقع وحجزه</li>
+          <li>التجهيزات اللوجستية في الموقع</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>خدمات الضيافة والتموين</h3>
+        <p>قوائم مصمّمة حسب ضيوفكم ومكانكم — تُطهى وتُقدَّم بعناية، من العشاء الحميم إلى التجمّعات الكبيرة.</p>
+        <ul>
+          <li>بوفيه مفتوح</li>
+          <li>عشاء مقدَّم على الطاولات</li>
+          <li>محطات طهي مباشرة</li>
+          <li>مقبّلات ومرحبات الضيوف</li>
+          <li>طاقم خدمة وضيافة</li>
+          <li>قوائم خاصة وحسب الطلب</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>محطات المشروبات والعصائر</h3>
+        <p>برنامج مشروبات متكامل وبار مُنسّق يصبح محور القاعة.</p>
+        <ul>
+          <li>موكتيلات مميّزة</li>
           <li>عصائر طازجة</li>
+          <li>ركن القهوة والشاي</li>
+          <li>مشروبات الترحيب</li>
+          <li>بار مجهّز مع طاقم</li>
         </ul>
       </div>
-
-      <!-- Setup -->
-      <div class="pillar">
-        <div class="pillar-image pillar-image-setup"></div>
-        <div class="pillar-num">iii.</div>
-        <h3>التنسيق</h3>
-        <p>القاعة نصف الحكاية. الطاولات والمفارش والإضاءة والزهور والتقديم — مُرتّبة بحيث يبدو كل شيء سلساً عند دخول ضيوفكم.</p>
+      <div class="svc-card">
+        <h3>الديكور وتنسيق المناسبات</h3>
+        <p>زهور وإضاءة وأقمشة وتنسيق يحوّل أي قاعة إلى لوحة بإطلالة متناغمة واحدة.</p>
         <ul>
-          <li>تصميم الطاولات والجلوس</li>
-          <li>الديكور والزهور</li>
+          <li>تصميم الفكرة والثيم</li>
+          <li>المسرح والخلفيات</li>
           <li>الإضاءة والأجواء</li>
-          <li>طاقم خدمة متكامل</li>
+          <li>تنسيق الطاولات والزينة</li>
+          <li>الستائر وتصميم المدخل</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>التصوير الفوتوغرافي والفيديو</h3>
+        <p>تغطية سينمائية تلتقط المناسبة كما شعرتم بها لا كما بدت فقط — لتعيشوها لسنوات.</p>
+        <ul>
+          <li>تصوير فوتوغرافي</li>
+          <li>فيديو سينمائي</li>
+          <li>تصوير جوّي بالدرون</li>
+          <li>مونتاج في نفس اليوم</li>
+          <li>ركن التصوير (فوتو بوث)</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>خدمات العرائس ومصمّمو الأزياء</h3>
+        <p>تشكيلة منتقاة وتصميم حسب الطلب للعروس وضيوفها، منسّقة لتلائم أجواء المناسبة.</p>
+        <ul>
+          <li>فساتين الزفاف</li>
+          <li>فساتين السهرة والضيوف</li>
+          <li>تصميم حسب الطلب</li>
+          <li>القياسات والتعديلات</li>
+          <li>الإكسسوارات والطرحات</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>صالون التجميل والتزيين</h3>
+        <p>تصفيف شعر ومكياج وتجميل للعروس والمضيفة والضيوف — إطلالات أنيقة جاهزة للاحتفال وللصور.</p>
+        <ul>
+          <li>تسريحة ومكياج العروس</li>
+          <li>تسريحة ومكياج الضيوف</li>
+          <li>تصفيف الشعر</li>
+          <li>العناية بالأظافر واللمسات الأخيرة</li>
+          <li>جلسات تجهيز قبل المناسبة</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>تجهيز العريس وخدمات العناية</h3>
+        <p>قصّات أنيقة وعناية وتصفيف للعريس والرجال — إطلالة منعشة ومضبوطة ليومكم الكبير.</p>
+        <ul>
+          <li>بدلات وأثواب</li>
+          <li>قص الشعر وتنسيق اللحية</li>
+          <li>حلاقة وعناية بالبشرة</li>
+          <li>باقة العناية المتكاملة</li>
+          <li>الإكسسوارات</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>تنسيق الزهور واللمسات الخاصة</h3>
+        <p>باقات وزينة طاولات وتفاصيل صغيرة تمنح المناسبة طابعاً شخصياً — من الممر حتى التوزيعات.</p>
+        <ul>
+          <li>باقات العروس</li>
+          <li>زينة الطاولات</li>
+          <li>أقواس وخلفيات زهرية</li>
+          <li>تنسيق الممر والبتلات</li>
+          <li>الهدايا والتوزيعات</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <h3>الترفيه وتجارب الضيوف</h3>
+        <p>موسيقى ومقدّمون وتجارب تضبط إيقاع الليلة وتأسر ضيوفك.</p>
+        <ul>
+          <li>موسيقى حيّة وفرق</li>
+          <li>دي جي وصوتيات</li>
+          <li>مقدّم حفل</li>
+          <li>عروض وفنّانون</li>
+          <li>أنشطة تفاعلية للضيوف</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== OFFERINGS ===================== -->
-<section class="services-extra">
+<!-- ===================== ABOUT ===================== -->
+<section class="about">
   <div class="wrap">
     <div class="section-label">
       <span class="num">٠٢ /</span>
-      <span>أبعد من المائدة</span>
+      <span>عن لوكس دلال</span>
     </div>
     <h2 class="section-title">
-      المناسبة كاملةً، <span class="serif it">بين يديك.</span>
+      كل مناسبة تستحق أن تكون <span class="serif it">سلسة وأنيقة لا تُنسى.</span>
     </h2>
 
-    <div class="offerings">
-      <!-- فساتين الضيوف -->
-      <div class="offering">
-        <div class="pillar-num">٤.</div>
-        <h3>فساتين ضيوف الأعراس</h3>
-        <p>تشكيلة منتقاة من الفساتين الأنيقة وملابس السهرة لكِ ولضيوفكِ — منسّقة لتلائم أجواء المناسبة، فيصل الجميع بأبهى إطلالة دون عناء اللحظات الأخيرة.</p>
-      </div>
+    <div class="about-lede">
+      <p>تأسست <strong>لوكس دلال</strong> برؤية تجمع كل مستلزمات المناسبات في مكانٍ واحد، فهي أكثر من مجرّد مزوّد لخدمات المناسبات — إنها منصة متكاملة تربط العملاء بنخبة من المحترفين الموثوقين والتجارب الراقية.</p>
+      <p>من اللقاءات الحميمة والاحتفالات الخاصة إلى الخطوبة والأعراس، نعتني بأدقّ التفاصيل لنصنع لحظاتٍ تعكس ذوقك وشخصيتك ورؤيتك.</p>
+      <p>من خلال شبكة من الشركاء والمحترفين المنتقَين بعناية، نجعل التخطيط بسيطًا وسلسًا وممتعًا.</p>
+      <p>في لوكس دلال، نحن لا ننظّم المناسبات فحسب — بل نصنع التجارب، ونحتفي بالقصص، ونحوّل اللحظات المميزة إلى ذكرياتٍ خالدة.</p>
+    </div>
 
-      <!-- القاعة -->
-      <div class="offering">
-        <div class="pillar-num">٥.</div>
-        <h3>قاعة المناسبة</h3>
-        <p>أماكن منتقاة بعناية لكل حجمٍ وأجواء، من القاعات الحميمة إلى الصالات الكبرى. أتولّى حجز المكان وتنظيم التفاصيل وتهيئته بما يناسب الأمسية التي تتخيّلها.</p>
+    <div class="mv-grid">
+      <div class="mv">
+        <span class="mv-label">رسالتنا</span>
+        <p>تبسيط تخطيط المناسبات عبر جمع الخدمات الراقية والمحترفين الموثوقين والتجارب الاستثنائية في وجهةٍ واحدة.</p>
       </div>
+      <div class="mv">
+        <span class="mv-label">رؤيتنا</span>
+        <p>أن نصبح الوجهة الأولى للمناسبات الفاخرة والأعراس والاحتفالات في العراق والمنطقة.</p>
+      </div>
+    </div>
 
-      <!-- التزيين -->
-      <div class="offering">
-        <div class="pillar-num">٦.</div>
-        <h3>التزيين</h3>
-        <p>زهور وإضاءة وأقمشة وتنسيق يحوّل أي قاعة إلى لوحة. كل تفصيل مختار ليمنح إطلالة متناغمة واحدة — من المدخل حتى قلب الطاولة.</p>
-      </div>
-
-      <!-- الترفيه -->
-      <div class="offering">
-        <div class="pillar-num">٧.</div>
-        <h3>الترفيه</h3>
-        <p>موسيقى حية ودي جي وفنّانون ومقدّمو حفلات يضبطون إيقاع الليلة ويأسرون ضيوفك — من أول نخبٍ حتى آخر رقصة.</p>
-      </div>
-
-      <!-- طاقم الخدمة -->
-      <div class="offering">
-        <div class="pillar-num">٨.</div>
-        <h3>طاقم الخدمة</h3>
-        <p>فرق مدرّبة ومتيقّظة من مضيفين ونُدُل ومنسّقين يديرون القاعة بسلاسة ويعتنون بكل ضيف، لتمرّ الأمسية بلا عناء من الاستقبال حتى الوداع.</p>
-      </div>
-
-      <!-- صالون التجميل -->
-      <div class="offering">
-        <div class="pillar-num">٩.</div>
-        <h3>صالون التجميل</h3>
-        <p>تصفيف شعر ومكياج وتجميل للعروس والمضيفة والضيوف في يوم المناسبة — إطلالات أنيقة محضّرة بعناية ليكون الجميع جاهزين للاحتفال وللصور.</p>
-      </div>
-
-      <!-- الحلاقة -->
-      <div class="offering">
-        <div class="pillar-num">١٠.</div>
-        <h3>الحلاقة</h3>
-        <p>قصّات أنيقة وعناية وتصفيف للعريس والرجال — إطلالة منعشة ومضبوطة ليومكم الكبير، بالعناية ذاتها التي نوليها لكل تفصيل.</p>
-      </div>
+    <div class="tagline">
+      وجهةٌ واحدة. <span class="serif it">لكلّ احتفال.</span>
     </div>
   </div>
 </section>
